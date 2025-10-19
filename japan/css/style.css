@@ -1,0 +1,217 @@
+/*  
+Author:
+File Name: styles.css
+Date: 10/18/2025
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #0a0a0f; /* dark background */
+    color: #e0e0e0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/* Style rules for header area */
+.mobile h1,
+.mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+/* Google Fonts for mobile header */
+.mobile h1 {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, #ff66ff, #cc99ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mobile h3 {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, #cc99ff, #6600ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Style rules for navigation area */
+nav {
+    background: linear-gradient(90deg, #111, #330033);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    border-top: 0.5px solid #6600ff;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #ff66ff;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    color: #0a0a0f;
+    background: linear-gradient(90deg, #ff66ff, #cc99ff);
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+    background: linear-gradient(90deg, #cc99ff, #6600ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+/* Style rules for class and id selectors */
+.link {
+    color: #ff66ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background: linear-gradient(90deg, #111, #330033);
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tel-link a {
+    color: #ff66ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background: linear-gradient(90deg, #111, #330033);
+    color: #e0e0e0;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #ff66ff;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    nav li a {
+        padding: 0.5em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #0a0a0f;
+        background: linear-gradient(90deg, #ff66ff, #cc99ff);
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+    body {
+        background: linear-gradient(to bottom, #0a0a0f, #330033);
+    }
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    main {
+        background-color: #111;
+    }
+}
